@@ -3,8 +3,8 @@
 
 BP=$(dirname $(dirname $0))
 
-if [ -f $1/Staticfile ]; then
-  echo "staticfile `cat $BP/VERSION`" && exit 0
+if [ -f $1/MdFile ]; then
+  echo "mdFile `cat $BP/VERSION`" && exit 0
 else
   echo "no" && exit 1
 fi
